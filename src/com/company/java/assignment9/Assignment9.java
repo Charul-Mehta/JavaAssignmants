@@ -7,7 +7,7 @@ public class Assignment9
 {
     public boolean checkSentence(String sentence){
         boolean flag=false;
-        Pattern pattern = Pattern.compile("[A-Z]*");
+        Pattern pattern = Pattern.compile("[A-Z][a-z]+.*[\\p{Punct}]");
         Matcher matcher = pattern.matcher(sentence);
         flag = matcher.matches();
 
